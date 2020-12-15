@@ -1,0 +1,79 @@
+{
+ "creation": "2020-04-30 14:50:15.869327",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "school__university",
+  "qualification",
+  "specialization",
+  "level",
+  "column_break_5",
+  "year_of_passing",
+  "course_type",
+  "class__percentage"
+ ],
+ "fields": [
+  {
+   "fieldname": "school__university",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "School / University",
+   "options": "University"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Qualification",
+   "options": "Qualification"
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Specialization",
+   "options": "Specialization"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Level",
+   "options": "SSLC\nHSC\nUnder Graduate\nPost Graduate\nDoctorate"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "year_of_passing",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Year of Passing",
+   "options": "Year of Passing"
+  },
+  {
+   "fieldname": "course_type",
+   "fieldtype": "Select",
+   "label": "Course Type",
+   "options": "Full Time\nPart Time\nDistance Education"
+  },
+  {
+   "fieldname": "class__percentage",
+   "fieldtype": "Data",
+   "label": "Class / Percentage"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-04-30 14:57:50.237504",
+ "modified_by": "Administrator",
+ "module": "jobPRO",
+ "name": "Education Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

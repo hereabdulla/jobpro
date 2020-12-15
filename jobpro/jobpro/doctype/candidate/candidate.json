@@ -1,0 +1,209 @@
+{
+ "autoname": "field:email",
+ "creation": "2020-04-30 14:22:15.543779",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "gender",
+  "address_line_1",
+  "address_line_2",
+  "column_break_5",
+  "email",
+  "mobile",
+  "dob",
+  "city",
+  "state",
+  "country",
+  "section_break_9",
+  "applied",
+  "passport_no",
+  "place_of_issue",
+  "column_break_13",
+  "issued_date",
+  "expiry_date",
+  "ecr_status",
+  "section_break_20",
+  "resume",
+  "column_break_22",
+  "photo",
+  "education_details_section",
+  "education",
+  "experience_details_section",
+  "experience"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Link",
+   "label": "Email",
+   "options": "User",
+   "unique": 1
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break",
+   "label": "Passport Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "applied",
+   "fieldtype": "Check",
+   "label": "Applied"
+  },
+  {
+   "depends_on": "eval:doc.applied != 1",
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "depends_on": "eval:doc.applied != 1",
+   "fieldname": "place_of_issue",
+   "fieldtype": "Data",
+   "label": "Place of Issue"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.applied != 1",
+   "fieldname": "issued_date",
+   "fieldtype": "Date",
+   "label": "Issued Date"
+  },
+  {
+   "depends_on": "eval:doc.applied != 1",
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "depends_on": "eval:doc.applied != 1",
+   "fieldname": "ecr_status",
+   "fieldtype": "Select",
+   "label": "ECR Status",
+   "options": "ECR\nECNR"
+  },
+  {
+   "fieldname": "education_details_section",
+   "fieldtype": "Section Break",
+   "label": "Education Details"
+  },
+  {
+   "fieldname": "education",
+   "fieldtype": "Table",
+   "label": "Education",
+   "options": "Education Details"
+  },
+  {
+   "fieldname": "experience_details_section",
+   "fieldtype": "Section Break",
+   "label": "Experience Details"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Table",
+   "label": "Experience",
+   "options": "Experience Details"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "label": "City",
+   "options": "City"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "resume",
+   "fieldtype": "Attach",
+   "label": "Resume"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach",
+   "label": "Photo"
+  }
+ ],
+ "modified": "2020-07-10 22:25:27.800731",
+ "modified_by": "Administrator",
+ "module": "jobPRO",
+ "name": "Candidate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

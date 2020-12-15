@@ -1,0 +1,268 @@
+{
+ "autoname": "JP-.###",
+ "creation": "2020-04-30 14:21:14.429043",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_title",
+  "job_category",
+  "employer",
+  "description",
+  "column_break_4",
+  "job_sector",
+  "job_type",
+  "required_skills",
+  "posted_date",
+  "published_on",
+  "application_deadline",
+  "section_break_5",
+  "requirements",
+  "salary_details_section",
+  "salary_type",
+  "salary_currency",
+  "column_break_12",
+  "minimum_salary",
+  "maximum_salary",
+  "expectations_section",
+  "career_level",
+  "experience",
+  "gender",
+  "column_break_19",
+  "industry",
+  "qualification",
+  "file_attachment",
+  "address_details_section",
+  "address_line_1",
+  "address_line_2",
+  "city",
+  "column_break_25",
+  "state",
+  "country",
+  "latitude",
+  "longitude"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "employer",
+   "fieldtype": "Link",
+   "label": "Employer",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_sector",
+   "fieldtype": "Link",
+   "label": "Job Sector",
+   "options": "Job Sector"
+  },
+  {
+   "fieldname": "job_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Job Type",
+   "options": "Full Time\nPart Time\nFreelance"
+  },
+  {
+   "fieldname": "required_skills",
+   "fieldtype": "Link",
+   "label": "Required Skills",
+   "options": "Skill"
+  },
+  {
+   "fieldname": "application_deadline",
+   "fieldtype": "Date",
+   "label": "Application Deadline"
+  },
+  {
+   "fieldname": "salary_details_section",
+   "fieldtype": "Section Break",
+   "label": "Salary Details"
+  },
+  {
+   "fieldname": "salary_type",
+   "fieldtype": "Select",
+   "label": "Salary Type",
+   "options": "Monthly\nWeekly\nHourly\nNegotiable"
+  },
+  {
+   "fieldname": "salary_currency",
+   "fieldtype": "Link",
+   "label": "Salary Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "minimum_salary",
+   "fieldtype": "Currency",
+   "label": "Minimum Salary"
+  },
+  {
+   "fieldname": "maximum_salary",
+   "fieldtype": "Currency",
+   "label": "Maximum Salary"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expectations_section",
+   "fieldtype": "Section Break",
+   "label": "Expectations"
+  },
+  {
+   "fieldname": "career_level",
+   "fieldtype": "Link",
+   "label": "Career Level",
+   "options": "Career Level"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Link",
+   "label": "Experience (in Years)",
+   "options": "Experience"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Link",
+   "label": "Industry",
+   "options": "Industry"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Link",
+   "label": "Qualification",
+   "options": "Qualification"
+  },
+  {
+   "fieldname": "file_attachment",
+   "fieldtype": "Attach",
+   "label": "File Attachment"
+  },
+  {
+   "fieldname": "address_details_section",
+   "fieldtype": "Section Break",
+   "label": "Address Details"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "city.country",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fetch_from": "city.state",
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Link",
+   "label": "City",
+   "options": "City"
+  },
+  {
+   "fieldname": "posted_date",
+   "fieldtype": "Date",
+   "label": "Posted Date"
+  },
+  {
+   "fieldname": "published_on",
+   "fieldtype": "Data",
+   "label": "Published On"
+  },
+  {
+   "fieldname": "job_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job Category",
+   "options": "Job Category"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Job Description"
+  },
+  {
+   "fieldname": "requirements",
+   "fieldtype": "Small Text",
+   "label": "Job Requirements (Mention in Points)"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  }
+ ],
+ "modified": "2020-07-12 17:08:15.755490",
+ "modified_by": "Administrator",
+ "module": "jobPRO",
+ "name": "Job Post",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
